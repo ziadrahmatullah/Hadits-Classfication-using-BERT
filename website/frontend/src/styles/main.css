@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .button {
+    @apply flex w-full font-semibold items-center justify-center rounded-lg p-2 shadow-none hover:shadow-lg focus:ring focus:outline-none transition duration-300 text-sm min-w-[8rem] text-[1rem];
+  }
+
+  .input-text {
+    @apply border border-gray-400 rounded-md shadow-sm w-full p-2 focus:outline-none focus:shadow-md transition duration-100;
+  }
+
+  .table-header {
+    @apply p-2 bg-gray-400 text-sm text-center font-semibold text-gray-800 uppercase tracking-wider;
+  }
+
+  .table-cell {
+    @apply p-2 text-center;
+  }
+
+  .table-body {
+    @apply bg-white divide-y divide-gray-400;
+  }
+
+  .page-title {
+    @apply font-semibold text-2xl;
+  }
+}
+
+@layer components {
+  .button-primary {
+    @apply bg-gray-700 text-gray-200 focus:bg-gray-500 focus:ring-0;
+  }
+}
